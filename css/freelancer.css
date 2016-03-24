@@ -4,6 +4,17 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*
+ Original background-color: #18bc9c
+ */
+
+/* Begin Custom Styles */
+.btn-primary {
+  background-color: #5faee3;
+}
+
+/* End Custom Styles */
+
 body {
     overflow-x: hidden;
 }
@@ -22,7 +33,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #5faee3;
 }
 
 h1,
@@ -63,7 +74,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #5faee3;
 }
 
 hr.star-primary {
@@ -82,7 +93,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #5faee3;
 }
 
 header .container {
@@ -97,7 +108,7 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
@@ -115,7 +126,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .name {
-        font-size: 4.75em;
+        font-size: 3.75em;
     }
 
     header .intro-text .skills {
@@ -181,7 +192,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #5faee3;
 }
 
 section.success a,
@@ -203,19 +214,19 @@ section.success a.active {
     }
 }
 
-#portfolio .portfolio-item {
+#register .register-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#register .register-item .register-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#register .register-item .register-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -226,11 +237,11 @@ section.success a.active {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#register .register-item .register-link .caption:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#register .register-item .register-link .caption .caption-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -241,21 +252,21 @@ section.success a.active {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#register .register-item .register-link .caption .caption-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#register .register-item .register-link .caption .caption-content h3,
+#register .register-item .register-link .caption .caption-content h4 {
     margin: 0;
 }
 
-#portfolio * {
+#register * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #register .register-item {
         margin: 0 0 30px;
     }
 }
@@ -274,7 +285,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #5faee3;
     background: #fff;
 }
 
@@ -327,7 +338,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #5faee3;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -394,7 +405,7 @@ footer .footer-below {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.register-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -405,20 +416,20 @@ footer .footer-below {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.register-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content img {
+.register-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content .item-details {
+.register-modal .modal-content .item-details {
     margin: 30px 0;
 }
 
-.portfolio-modal .close-modal {
+.register-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -428,11 +439,11 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.register-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.register-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -443,7 +454,7 @@ footer .footer-below {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.register-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -453,7 +464,7 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.portfolio-modal .modal-backdrop {
+.register-modal .modal-backdrop {
     display: none;
     opacity: 0;
 }
