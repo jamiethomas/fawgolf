@@ -100,53 +100,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 register-item text-center">
-                    <a href="#registerModal1" class="register-link" data-toggle="modal" title="Invidual Sign up">
-                        <!-- <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <button class="btn btn-lg btn-default">
-                        <i class="fa fa-user fa-5x"></i><br/>
-                        Individual
-                      </button>
-                        <!-- <img src="img/register/cabin.png" class="img-responsive" alt=""> -->
-                    </a>
-                </div>
-                <div class="col-sm-4 register-item text-center">
-                    <a href="#registerModal2" class="register-link" data-toggle="modal">
-                        <!-- <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <button class="btn btn-lg btn-default">
-                        <i class="fa fa-users fa-5x"></i><br/>
-                        Team
-                        </button>
-                        <!-- <img src="img/register/cake.png" class="img-responsive" alt=""> -->
-                    </a>
-                </div>
-                <div class="col-sm-4 register-item text-center">
-                    <a href="#registerModal3" class="register-link" data-toggle="modal">
-                        <!-- <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div> -->
-                        <button class="btn btn-lg btn-default">
-                        <i class="fa fa-usd fa-5x"></i><br/>
-                        Sponsor
-                        </button>
+                <div class="col-sm-12 register-item text-center">
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="SZJCX4MJZKHYY">
+                    <input type="hidden" name="on0" value="Registration Options">
+                    <select class="form-control" name="os0">
+                    <option value="Test">Test $1.00 USD</option>
+                    <option value="Single">Single $100.00 USD</option>
+                    <option value="Foursome">Foursome $400.00 USD</option>
+                    </select>
+                    <input type="hidden" name="currency_code" value="USD">
+                    <br />
+                    <button class="btn btn-primary btn-lg" type="submit"><i class="fa fa-credit-card"></i>&nbsp;Pay Now</button>
+                    <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
+                    <br/><img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
 
-                        <!-- <img src="img/register/circus.png" class="img-responsive" alt=""> -->
-                    </a>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
